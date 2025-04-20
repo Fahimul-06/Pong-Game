@@ -2,7 +2,6 @@
 
 A modern and feature-rich Pong game developed using **Java** and **Swing GUI**. This project goes beyond the basics with gameplay enhancements like power-ups, high score saving, pause/resume controls, and a beautiful splash screen with interactive buttons.
 
-
 🚀 Features
 
  🎮 Classic Pong Gameplay – Single player vs AI or 2-player mode
@@ -33,16 +32,12 @@ Prerequisites
 - Any Java IDE (IntelliJ IDEA, Eclipse, VSCode)
 
 ### Clone the Repository
-
-git clone https://github.com/Fahimul-06/pong-game-java.git
 cd pong_game
 Run the Game
 Open the project in your IDE
 
 Run SplashScreen.java
-
 Enjoy the game!
-
 
 🧠 Concepts Used
 Java OOP: Classes, Objects, Inheritance
