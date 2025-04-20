@@ -55,10 +55,6 @@ Randomized events (power-ups)
 
 KeyListeners for controls
 
-
-📝 License
-This project is licensed under the MIT License.
-
 Enjoy the game and feel free to contribute or customize it!
 
 
