@@ -41,7 +41,7 @@ Enjoy the game!
 
 🧠 Concepts Used
 
-Java OOP: Classes, Objects, Inheritance
+Java OOP
 
 Swing GUI Programming
 
