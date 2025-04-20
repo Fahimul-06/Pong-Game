@@ -1,41 +1,37 @@
 import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
-import javax.swing.*;
 
 public class Ball extends Rectangle {
 
-	Random random;
-	int xVelocity;
-	int yVelocity;
-	int initialspeed = 2 ;
-	
-	Ball(int x, int y, int width, int height){
-		super(x,y,width,height);
-		random = new Random();
-		int randomXDirection = random.nextInt(2);
-		if (randomXDirection == 0)
-			randomXDirection--;
-		setXDirection(randomXDirection*initialspeed);
-		
-		int randomYDirection = random.nextInt(2);
-		if (randomYDirection == 0)
-			randomYDirection--;
-		setYDirection(randomYDirection*initialspeed);
-	}
-	
-	public void setXDirection(int randomXDirection) {
-		xVelocity = randomXDirection;
-	}
-	public void setYDirection(int randomYDirection) {
-		yVelocity = randomYDirection;
-	}
-	public void move() {
-		x += xVelocity;
-		y += yVelocity;
-	}
-	public void draw(Graphics g) {
-		g.setColor(Color.white);
-		g.fillOval(x, y, width, height );
-	}
+    Random random;
+    int xVelocity;
+    int yVelocity;
+    int initialSpeed = 5;
+
+    Ball(int x, int y, int width, int height) {
+        super(x, y, width, height);
+        random = new Random();
+        int randomXDirection = random.nextBoolean() ? 1 : -1;
+        int randomYDirection = random.nextBoolean() ? 1 : -1;
+        xVelocity = initialSpeed * randomXDirection;
+        yVelocity = initialSpeed * randomYDirection;
+    }
+
+    public void setXDirection(int x) {
+        xVelocity = x;
+    }
+
+    public void setYDirection(int y) {
+        yVelocity = y;
+    }
+
+    public void move() {
+        x += xVelocity;
+        y += yVelocity;
+    }
+
+    public void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fillOval(x, y, width, height);
+    }
 }
