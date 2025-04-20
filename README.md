@@ -40,6 +40,7 @@ Run SplashScreen.java
 Enjoy the game!
 
 🧠 Concepts Used
+
 Java OOP: Classes, Objects, Inheritance
 
 Swing GUI Programming
